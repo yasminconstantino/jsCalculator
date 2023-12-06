@@ -17,6 +17,10 @@ function calculari() {
   visor.value = eval(visor.value);
 }
 
+function deleteLastDigit() {
+  var currentValue = visor.value;
+  visor.value = currentValue.slice(0, -1);}
+
 // Adicione um evento para teclas pressionadas
 document.addEventListener('keydown', function(event) {
   // Verifica se a tecla pressionada é um número ou operador
@@ -27,5 +31,7 @@ document.addEventListener('keydown', function(event) {
     calculari();
   } else if (event.key === 'c' || event.key === 'C') {
     limpezatotal();
-  }
-}); 
+  } else if (event.key === 'Backspace') {
+  deleteLastDigit();
+}
+});
