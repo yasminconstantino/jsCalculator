@@ -24,7 +24,7 @@ function deleteLastDigit() {
 // Adicione um evento para teclas pressionadas
 document.addEventListener('keydown', function(event) {
   // Verifica se a tecla pressionada é um número ou operador
-  if (/[\d\+\-\*\/]/.test(event.key)) {
+  if (/[\d\+\-\*\/\.]/.test(event.key)) {
     adicionae(event.key);
   } else if (event.key === 'Enter') {
     event.preventDefault();
