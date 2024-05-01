@@ -29,7 +29,7 @@ document.addEventListener('keydown', function(event) {
   } else if (event.key === 'Enter') {
     event.preventDefault();
     calculari();
-  } else if (event.key === 'c' || event.key === 'C') {
+  } else if (event.key === 'c' || event.key === 'C' || event.key === 'Delete') {
     limpezatotal();
   } else if (event.key === 'Backspace') {
   deleteLastDigit();
